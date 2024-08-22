@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Etab - Élèves</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mon Etab</h2>
+        <ul>
+            <li><a href="../home.html">Tableau de bord</a></li>
+            <li><a href="../student/studentPage.html">Élèves</a></li>
+            <li><a href="../teacher/professorPage.html">Professeurs</a></li>
+            <li><a href="../user/userPage.html">Utilisateurs</a></li>
+            <li><a href="../report/rapport.html">Rapports</a></li>
+        </ul>
+        <a href="#" id="logout" class="logout-btn">Déconnexion</a>
+    </div>
+    <div class="main-content">
+        <h1>Élèves (2)</h1>
+        <button onclick="location.href='addStudent.html'" id="addStudent">+ Nouvel élève</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Genre</th>
+                    <th>Classe</th>
+                    <th>Matricule</th>
+                    <th>Âge</th>
+                    <th>Téléphone</th>
+                    <th>Vlles</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>KOFFI</td>
+                    <td>George</td>
+                    <td>M</td>
+                    <td>1ère C</td>
+                    <td>GDJ7GDGD</td>
+                    <td>18</td>
+                    <td>0123456789</td>
+                    <td>Bonoua</td>
+                    <td>
+                        <button onclick="location.href='editStudent.html'" class="buttonOrg">Modifier</button>
+                        <button onclick="showConfirmationPopup()" class="buttonRed">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>KONE</td>
+                    <td>Solal</td>
+                    <td>F</td>
+                    <td>2nd C</td>
+                    <td>GDJ7GDGD</td>
+                    <td>22</td>
+                    <td>0123456789</td>
+                    <td>Abidjan</td>
+                    <td>
+                        <button onclick="location.href='editStudent.html'" class="buttonOrg">Modifier</button>
+                        <button onclick="showConfirmationPopup()" class="buttonRed">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Etab - Rapport</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mon Etab</h2>
+        <ul>
+            <li><a href="../home.html">Tableau de bord</a></li>
+            <li><a href="../student/studentPage.html">Élèves</a></li>
+            <li><a href="../teacher/professorPage.html">Professeurs</a></li>
+            <li><a href="../user/userPage.html">Utilisateurs</a></li>
+            <li><a href="../report/rapport.html">Rapports</a></li>
+        </ul>
+        <a href="#" id="logout" class="logout-btn">Déconnexion</a>
+    </div>
+    <div class="main-content-form">
+        <h1>Rapport</h1>
+        <form class="form-ajout">
+            <div class="form-group">
+                <select id="classe" name="classe" required>
+                    <option value="listEleve">Sélectionner une option</option>
+                    <option value="listEleve">Liste des élèves</option>
+                    <option value="listProf">Liste des professeurs</option>
+                    <option value="listUser">Liste des utilisateurs</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn buttonOrg">Générer format PDF</button>
+                <button type="button" class="btn buttonGreen">Générer format Excel</button>
+            </div>
+        </form>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
